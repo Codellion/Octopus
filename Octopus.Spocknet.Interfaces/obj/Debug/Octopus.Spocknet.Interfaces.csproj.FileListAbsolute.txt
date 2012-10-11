@@ -1,0 +1,5 @@
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Octopus.Spocknet.Interfaces.dll
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Octopus.Spocknet.Interfaces.pdb
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\obj\Debug\ResolveAssemblyReference.cache
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\obj\Debug\Octopus.Spocknet.Interfaces.dll
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\obj\Debug\Octopus.Spocknet.Interfaces.pdb

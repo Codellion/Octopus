@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // La información general sobre un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos atributos para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("OMF")]
-[assembly: AssemblyDescription("Octopus Management Foundation")]
+[assembly: AssemblyTitle("Octopus.Test.Client")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Codellion")]
-[assembly: AssemblyProduct("Octopus")]
-[assembly: AssemblyCopyright("Copyright © Codellion 2012")]
-[assembly: AssemblyTrademark("Codellion")]
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyProduct("Octopus.Test.Client")]
+[assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Si establece ComVisible como false, los tipos de este ensamblado no estarán visibles 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como identificador de typelib si este proyecto se expone a COM
-[assembly: Guid("18194130-4b4d-48fe-85c3-255b73783184")]
+[assembly: Guid("6c7c4828-5a1a-4c14-92b0-f1bb5cc9b220")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
