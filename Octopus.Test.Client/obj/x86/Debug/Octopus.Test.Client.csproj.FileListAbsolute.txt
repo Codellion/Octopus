@@ -12,3 +12,17 @@ C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Verso.Net.Commons.pdb
 C:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\Octopus.Test.Client.exe
 C:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\Octopus.Test.Client.pdb
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Test.Client.exe.config
+E:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\Octopus.Test.Client.exe
+E:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\Octopus.Test.Client.pdb
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Test.Client.exe
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Test.Client.pdb
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Injection.Commons.dll
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Management.Commons.dll
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Spocknet.Interfaces.dll
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Verso.Net.Commons.dll
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Verso.Net.Commons.pdb
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Injection.Commons.pdb
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Management.Commons.pdb
+E:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Spocknet.Interfaces.pdb
+E:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\Octopus.Test.Client.csprojResolveAssemblyReference.cache

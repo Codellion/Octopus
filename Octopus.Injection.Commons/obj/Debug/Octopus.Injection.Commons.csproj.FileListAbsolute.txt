@@ -3,3 +3,8 @@ C:\Codellion\Github\Octopus\Octopus.Injection.Commons\bin\Debug\Octopus.Injectio
 C:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\ResolveAssemblyReference.cache
 C:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\Octopus.Injection.Commons.dll
 C:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\Octopus.Injection.Commons.pdb
+E:\Codellion\Github\Octopus\Octopus.Injection.Commons\bin\Debug\Octopus.Injection.Commons.dll
+E:\Codellion\Github\Octopus\Octopus.Injection.Commons\bin\Debug\Octopus.Injection.Commons.pdb
+E:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\Octopus.Injection.Commons.dll
+E:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\Octopus.Injection.Commons.pdb
+E:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\Octopus.Injection.Commons.csprojResolveAssemblyReference.cache

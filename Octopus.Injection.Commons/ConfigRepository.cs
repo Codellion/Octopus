@@ -14,19 +14,19 @@ namespace Octopus.Injection.Commons
 
         public static void LoadConfiguration()
         {
-            var secAsmLoc = ConfigurationManager.GetSection("octopus/assembliesLocation") as NameValueCollection;
+            var secSvcBlock = ConfigurationManager.GetSection("octopus/serviceBlocks") as NameValueCollection;
             var secAsmDep = ConfigurationManager.GetSection("octopus/assembliesDependencies") as NameValueCollection;
             var secInjMap = ConfigurationManager.GetSection("octopus/injectionMap") as NameValueCollection;
 
-            if (secAsmLoc != null && secAsmLoc.HasKeys())
+            if (secSvcBlock != null && secSvcBlock.HasKeys())
             {
-                ServiceBlocks = new Dictionary<string, ServiceBlock>(secAsmLoc.AllKeys.Length);
+                ServiceBlocks = new Dictionary<string, ServiceBlock>(secSvcBlock.AllKeys.Length);
                 ServiceTypes = new Dictionary<string, Assembly>();
 
-                foreach (var asmLoc in secAsmLoc.AllKeys)
+                foreach (var asmLoc in secSvcBlock.AllKeys)
                 {
                     var serviceBlock = new ServiceBlock(asmLoc);
-                    var asmDir = secAsmLoc[asmLoc];
+                    var asmDir = secSvcBlock[asmLoc];
 
                     var sInjType = new string[2];
 
