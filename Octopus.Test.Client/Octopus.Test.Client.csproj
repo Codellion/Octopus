@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,10 +49,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Verso\Verso.Net.Commons\Verso.Net.Commons.csproj">
+      <Project>{0E7D4746-344B-4261-A3B6-C94FB0561133}</Project>
+      <Name>Verso.Net.Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Injection.Commons\Octopus.Injection.Commons.csproj">
+      <Project>{3DB49629-ADE8-456F-B4D5-0B22F540E1BC}</Project>
+      <Name>Octopus.Injection.Commons</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Octopus.Management.Commons\Octopus.Management.Commons.csproj">
       <Project>{B5B85948-AD14-4152-88C1-B7708FD40F19}</Project>
       <Name>Octopus.Management.Commons</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Octopus.Spocknet.Interfaces\Octopus.Spocknet.Interfaces.csproj">
+      <Project>{FC6494B0-1973-43DC-88F9-DAC1D4F1955F}</Project>
+      <Name>Octopus.Spocknet.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

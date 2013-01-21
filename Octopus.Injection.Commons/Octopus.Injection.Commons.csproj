@@ -5,13 +5,14 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FC6494B0-1973-43DC-88F9-DAC1D4F1955F}</ProjectGuid>
+    <ProjectGuid>{3DB49629-ADE8-456F-B4D5-0B22F540E1BC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Octopus.Spocknet.Interfaces</RootNamespace>
-    <AssemblyName>Octopus.Spocknet.Interfaces</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>Octopus.Injection.Commons</RootNamespace>
+    <AssemblyName>Octopus.Injection.Commons</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,9 +33,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,22 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ServiceOctopusImpl.cs" />
+    <Compile Include="ConfigRepository.cs" />
+    <Compile Include="Injector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Verso\Verso.Net.Commons\Verso.Net.Commons.csproj">
-      <Project>{0E7D4746-344B-4261-A3B6-C94FB0561133}</Project>
-      <Name>Verso.Net.Commons</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Octopus.Injection.Commons\Octopus.Injection.Commons.csproj">
-      <Project>{3DB49629-ADE8-456F-B4D5-0B22F540E1BC}</Project>
-      <Name>Octopus.Injection.Commons</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Octopus.Management.Commons\Octopus.Management.Commons.csproj">
-      <Project>{B5B85948-AD14-4152-88C1-B7708FD40F19}</Project>
-      <Name>Octopus.Management.Commons</Name>
-    </ProjectReference>
+    <Compile Include="ServiceBlock.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

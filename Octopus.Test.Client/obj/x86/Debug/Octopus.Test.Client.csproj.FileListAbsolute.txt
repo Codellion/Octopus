@@ -1,7 +1,14 @@
-C:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Test.Client.exe.config
 C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Test.Client.exe
 C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Test.Client.pdb
+C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Injection.Commons.dll
 C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Management.Commons.dll
+C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Spocknet.Interfaces.dll
+C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Verso.Net.Commons.dll
+C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Injection.Commons.pdb
 C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Management.Commons.pdb
+C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Octopus.Spocknet.Interfaces.pdb
+C:\Codellion\Github\Octopus\Octopus.Test.Client\bin\Debug\Verso.Net.Commons.pdb
+C:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\Octopus.Test.Client.exe
 C:\Codellion\Github\Octopus\Octopus.Test.Client\obj\x86\Debug\Octopus.Test.Client.pdb

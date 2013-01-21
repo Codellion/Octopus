@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general sobre un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos atributos para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("Octopus.Spocknet.Interfaces")]
+[assembly: AssemblyTitle("Octopus.Injection.Commons")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Octopus.Spocknet.Interfaces")]
+[assembly: AssemblyProduct("Octopus.Injection.Commons")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como identificador de typelib si este proyecto se expone a COM
-[assembly: Guid("24df2cd3-8727-4640-b16c-e3652a70ebcc")]
+[assembly: Guid("8dbc5701-9e9c-4943-943d-bda2b7679f99")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

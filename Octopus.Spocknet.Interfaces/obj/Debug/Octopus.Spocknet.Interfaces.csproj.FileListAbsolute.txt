@@ -1,5 +1,11 @@
 C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Octopus.Spocknet.Interfaces.dll
 C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Octopus.Spocknet.Interfaces.pdb
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Octopus.Injection.Commons.dll
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Octopus.Management.Commons.dll
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Verso.Net.Commons.dll
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Verso.Net.Commons.pdb
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Octopus.Injection.Commons.pdb
+C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\bin\Debug\Octopus.Management.Commons.pdb
 C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\obj\Debug\ResolveAssemblyReference.cache
 C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\obj\Debug\Octopus.Spocknet.Interfaces.dll
 C:\Codellion\Github\Octopus\Octopus.Spocknet.Interfaces\obj\Debug\Octopus.Spocknet.Interfaces.pdb

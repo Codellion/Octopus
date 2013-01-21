@@ -1,0 +1,5 @@
+C:\Codellion\Github\Octopus\Octopus.Injection.Commons\bin\Debug\Octopus.Injection.Commons.dll
+C:\Codellion\Github\Octopus\Octopus.Injection.Commons\bin\Debug\Octopus.Injection.Commons.pdb
+C:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\ResolveAssemblyReference.cache
+C:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\Octopus.Injection.Commons.dll
+C:\Codellion\Github\Octopus\Octopus.Injection.Commons\obj\Debug\Octopus.Injection.Commons.pdb
