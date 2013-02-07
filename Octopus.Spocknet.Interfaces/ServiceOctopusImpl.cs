@@ -15,7 +15,7 @@ namespace Octopus.Spocknet.Interfaces
 
                 object res;
 
-                if(serviceBlock.IsGeneric)
+                if (serviceBlock.IsGeneric && ConfigRepository.ServiceTypes.ContainsKey(verso.TypeVerso.AssemblyName))
                 {
                     var tGenService = ConfigRepository.ServiceTypes[verso.TypeVerso.AssemblyName]
                         .GetType(verso.TypeVerso.ClassName);
