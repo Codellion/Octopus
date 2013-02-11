@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octopus.Management.Commons"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octopus.Test.Client", "Octopus.Test.Client\Octopus.Test.Client.csproj", "{B2AF35CB-9C36-4259-A11F-CBD4AC96B133}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octopus.Spocknet.Interfaces", "Octopus.Spocknet.Interfaces\Octopus.Spocknet.Interfaces.csproj", "{FC6494B0-1973-43DC-88F9-DAC1D4F1955F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octopus.Spock.Interfaces", "Octopus.Spocknet.Interfaces\Octopus.Spock.Interfaces.csproj", "{FC6494B0-1973-43DC-88F9-DAC1D4F1955F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octopus.Injection.Commons", "Octopus.Injection.Commons\Octopus.Injection.Commons.csproj", "{3DB49629-ADE8-456F-B4D5-0B22F540E1BC}"
 EndProject

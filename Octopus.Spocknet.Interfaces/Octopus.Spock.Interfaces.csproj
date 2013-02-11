@@ -8,8 +8,8 @@
     <ProjectGuid>{FC6494B0-1973-43DC-88F9-DAC1D4F1955F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Octopus.Spocknet.Interfaces</RootNamespace>
-    <AssemblyName>Octopus.Spocknet.Interfaces</AssemblyName>
+    <RootNamespace>Octopus.Spock.Interfaces</RootNamespace>
+    <AssemblyName>Octopus.Spock.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

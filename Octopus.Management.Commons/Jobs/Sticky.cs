@@ -16,6 +16,7 @@ namespace Octopus.Management.Commons.Jobs
     /// Clase que representa un plan de ejecución de un subproceso en segundo plano
     /// </summary>
     /// <typeparam name="T">Tipo de parámetro que recibe el subproceso que se ejecuta</typeparam>
+    [Serializable]
     public class Sticky<T>
     {
         #region Propiedades

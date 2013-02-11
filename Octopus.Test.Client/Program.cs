@@ -2,7 +2,7 @@
 using System.ServiceModel;
 using Octopus.Injection.Commons;
 using Octopus.Management.Commons.Jobs;
-using Octopus.Spocknet.Interfaces;
+using Octopus.Spock.Interfaces;
 
 namespace Octopus.Test.Client
 {

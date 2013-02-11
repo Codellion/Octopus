@@ -61,9 +61,9 @@
       <Project>{B5B85948-AD14-4152-88C1-B7708FD40F19}</Project>
       <Name>Octopus.Management.Commons</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Spocknet.Interfaces\Octopus.Spocknet.Interfaces.csproj">
+    <ProjectReference Include="..\Octopus.Spocknet.Interfaces\Octopus.Spock.Interfaces.csproj">
       <Project>{FC6494B0-1973-43DC-88F9-DAC1D4F1955F}</Project>
-      <Name>Octopus.Spocknet.Interfaces</Name>
+      <Name>Octopus.Spock.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
