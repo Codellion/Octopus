@@ -1,7 +1,7 @@
 ﻿using Octopus.Injection.Commons;
 using Verso.Net.Commons;
 
-namespace Octopus.Spocknet.Interfaces
+namespace Octopus.Spock.Interfaces
 {
     public class ServiceOctopusImpl : IServiceBlock
     {
