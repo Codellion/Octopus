@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Configuration;
 using System.IO;
 using System.Reflection;
+using System.Linq;
+
+using Octopus.Injection.Commons.Config;
 
 namespace Octopus.Injection.Commons
 {
@@ -11,52 +13,91 @@ namespace Octopus.Injection.Commons
     {
         public static Dictionary<string, ServiceBlock> ServiceBlocks { get; set; }
         public static Dictionary<string, Assembly> ServiceTypes { get; set; }
+        private static Dictionary<string, Assembly> ServiceTypesCrossDomain { get; set; }
 
         public static void LoadConfiguration()
         {
-            var secAsmLoc = ConfigurationManager.GetSection("octopus/assembliesLocation") as NameValueCollection;
-            var secAsmDep = ConfigurationManager.GetSection("octopus/assembliesDependencies") as NameValueCollection;
-            var secInjMap = ConfigurationManager.GetSection("octopus/injectionMap") as NameValueCollection;
+            var octoSec = ConfigurationManager.GetSection("spock/octopus") as OctopusSection;                 
 
-            if (secAsmLoc != null && secAsmLoc.HasKeys())
+            if (octoSec != null && octoSec.ServiceBlocks != null)
             {
-                ServiceBlocks = new Dictionary<string, ServiceBlock>(secAsmLoc.AllKeys.Length);
+                ServiceBlocks = new Dictionary<string, ServiceBlock>(octoSec.ServiceBlocks.Count);
                 ServiceTypes = new Dictionary<string, Assembly>();
+                ServiceTypesCrossDomain = new Dictionary<string, Assembly>();
 
-                foreach (var asmLoc in secAsmLoc.AllKeys)
+
+                foreach (ServiceBlockConf svcBlockConf in octoSec.ServiceBlocks)
                 {
-                    var serviceBlock = new ServiceBlock(asmLoc);
-                    var asmDir = secAsmLoc[asmLoc];
+                    var serviceBlock = new ServiceBlock(svcBlockConf.Name);
+                    var asmDir = svcBlockConf.AssemblyLocation;
 
-                    var sInjType = new string[2];
-
-                    if (secInjMap != null && secInjMap.HasKeys() && secInjMap[asmLoc].Contains(","))
-                        sInjType = secInjMap[asmLoc].Split(',');
-
-                    if (secAsmDep != null && secAsmDep.HasKeys())
+                    foreach (DependenceConf dependConf in svcBlockConf.Dependences)
                     {
-                        //Cargamos las librerias asociadas al servicio
-                        foreach (var asmDep in secAsmDep.AllKeys)
+                        string fileDll = string.Format("{0}/{1}", asmDir, dependConf.Assembly);
+
+                        Assembly assembly = null;
+                        
+                        if (dependConf.IsCrossDomain)
                         {
-                            string fileDll = string.Format("{0}/{1}", asmDir, asmDep);
-
-                            var assembly = Assembly.LoadFrom(Path.GetFullPath(fileDll));
-                            
-                            serviceBlock.Assemblies.Add(assembly);
+                            AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+                            assembly = AppDomain.CurrentDomain.Load("@#" + fileDll);
+                            ServiceTypesCrossDomain[assembly.FullName] = assembly;
+                        }
+                        else
+                        {
+                            assembly = Assembly.LoadFrom(Path.GetFullPath(fileDll));
                             ServiceTypes[assembly.FullName] = assembly;
+                        }
 
-                            //Cargamos el tipo que se injectará en el servicio
-                            if(asmDep.ToLower().Equals(sInjType[1].Trim().ToLower()))
-                            {
-                                serviceBlock.InjectionType = assembly.GetType(sInjType[0]);
-                                serviceBlock.IsGeneric = serviceBlock.InjectionType.IsGenericType;
-                            }
-                        }   
+                        serviceBlock.Assemblies.Add(assembly);
+
+                        //Cargamos el tipo que se injectará en el servicio
+                        if (svcBlockConf.InjectionMap != null &&
+                            dependConf.Assembly.ToLower().Equals(svcBlockConf.InjectionMap.Assembly.ToLower()))
+                        {
+                            serviceBlock.InjectionType = assembly.GetType(svcBlockConf.InjectionMap.Class);
+                            serviceBlock.IsGeneric = serviceBlock.InjectionType.IsGenericType;
+                        }
+
+                        ServiceBlocks[serviceBlock.Name] = serviceBlock;
                     }
-
-                    ServiceBlocks[asmLoc] = serviceBlock;
                 }
             }
+        }
+
+        private static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            Assembly assembly = null;
+
+            if (args.Name.StartsWith("@#"))
+            {
+                var fileDll = args.Name.Substring(2);
+
+                assembly = Assembly.LoadFrom(Path.GetFullPath(fileDll));
+            }
+            else
+            {
+                if (ServiceTypesCrossDomain != null)
+                {
+                    if(ServiceTypesCrossDomain.ContainsKey(args.Name))
+                    {
+                        assembly = ServiceTypesCrossDomain[args.Name];    
+                    }
+                    else
+                    {
+                        assembly = ServiceTypesCrossDomain
+                                        .Where(asm => asm.Key.Split(',')[0].Equals(args.Name))
+                                        .Select(asm => asm.Value).FirstOrDefault();
+                    }
+
+                    if (assembly == null && ServiceTypes != null && ServiceTypes.ContainsKey(args.Name))
+                    {
+                        assembly = ServiceTypes[args.Name];
+                    }
+                }
+            }
+
+            return assembly;
         }
     }
 }

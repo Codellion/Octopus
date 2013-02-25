@@ -43,6 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigRepository.cs" />
+    <Compile Include="Config\InjectionConf.cs" />
+    <Compile Include="Config\DependenceConf.cs" />
+    <Compile Include="Config\Dependences.cs" />
+    <Compile Include="Config\OctopusSection.cs" />
+    <Compile Include="Config\MetadataCache.cs" />
+    <Compile Include="Config\ServiceBlocks.cs" />
+    <Compile Include="Config\ServiceBlockConf.cs" />
     <Compile Include="Injector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceBlock.cs" />

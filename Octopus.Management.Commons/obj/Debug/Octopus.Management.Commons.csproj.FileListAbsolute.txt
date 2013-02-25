@@ -1,5 +1,4 @@
-C:\Codellion\Github\Octopus\Octopus.Management.Commons\bin\Debug\Octopus.Management.Commons.dll
-C:\Codellion\Github\Octopus\Octopus.Management.Commons\bin\Debug\Octopus.Management.Commons.pdb
-C:\Codellion\Github\Octopus\Octopus.Management.Commons\obj\Debug\ResolveAssemblyReference.cache
-C:\Codellion\Github\Octopus\Octopus.Management.Commons\obj\Debug\Octopus.Management.Commons.dll
-C:\Codellion\Github\Octopus\Octopus.Management.Commons\obj\Debug\Octopus.Management.Commons.pdb
+C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\bin\Debug\Octopus.Management.Commons.dll
+C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\bin\Debug\Octopus.Management.Commons.pdb
+C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\obj\Debug\Octopus.Management.Commons.dll
+C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\obj\Debug\Octopus.Management.Commons.pdb
