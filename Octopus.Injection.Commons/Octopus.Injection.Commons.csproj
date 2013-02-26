@@ -43,9 +43,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigRepository.cs" />
-    <Compile Include="Config\InjectionConf.cs" />
+    <Compile Include="Config\Contracts.cs" />
+    <Compile Include="Config\Contract.cs" />
+    <Compile Include="Config\InjectionMap.cs" />
+    <Compile Include="Config\Properties.cs" />
+    <Compile Include="Config\Property.cs" />
+    <Compile Include="Config\Injection.cs" />
+    <Compile Include="Config\Injections.cs" />
+    <Compile Include="Config\GenericParameter.cs" />
     <Compile Include="Config\DependenceConf.cs" />
-    <Compile Include="Config\Dependences.cs" />
+    <Compile Include="Config\Dependencies.cs" />
     <Compile Include="Config\OctopusSection.cs" />
     <Compile Include="Config\MetadataCache.cs" />
     <Compile Include="Config\ServiceBlocks.cs" />

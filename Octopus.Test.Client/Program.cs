@@ -74,7 +74,7 @@ namespace Octopus.Test.Client
             //Console.WriteLine("Ejecucion Octopus: {0}ms", octopusTm);
 
             ConfigRepository.LoadConfiguration();
-
+            
             var service = new ServiceHost(typeof (ServiceOctopusImpl));
             service.Open();
 

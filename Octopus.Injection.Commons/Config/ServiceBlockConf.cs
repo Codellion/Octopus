@@ -21,16 +21,16 @@ namespace Octopus.Injection.Commons.Config
             set { this["assemblyLocation"] = value; }
         }
 
-        [ConfigurationProperty("dependences", IsRequired = false)]
-        public Dependences Dependences
+        [ConfigurationProperty("dependencies", IsRequired = false)]
+        public Dependencies Dependencies
         {
-            get { return (Dependences)this["dependences"]; }
+            get { return (Dependencies)this["dependencies"]; }
         }
 
-        [ConfigurationProperty("injectionMap", IsRequired = false)]
-        public InjectionConf InjectionMap
+        [ConfigurationProperty("genericParameter", IsRequired = false)]
+        public GenericParameter GenericParameter
         {
-            get { return (InjectionConf)this["injectionMap"]; }
+            get { return (GenericParameter)this["genericParameter"]; }
         }
     }
 }

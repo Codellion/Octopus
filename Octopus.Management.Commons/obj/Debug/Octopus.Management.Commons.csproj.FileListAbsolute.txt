@@ -2,3 +2,4 @@ C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\bin\Debug\Octopus.Managem
 C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\bin\Debug\Octopus.Management.Commons.pdb
 C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\obj\Debug\Octopus.Management.Commons.dll
 C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\obj\Debug\Octopus.Management.Commons.pdb
+C:\Codellion\GitHub\Octopus\Octopus.Management.Commons\obj\Debug\Octopus.Management.Commons.csprojResolveAssemblyReference.cache

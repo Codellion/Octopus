@@ -12,5 +12,11 @@ namespace Octopus.Injection.Commons.Config
         {
             get { return (ServiceBlocks)this["serviceBlocks"]; }
         }
+
+        [ConfigurationProperty("injectionMap", IsRequired = false)]
+        public InjectionMap InjectionMap
+        {
+            get { return (InjectionMap)this["injectionMap"]; }
+        }
     }
 }

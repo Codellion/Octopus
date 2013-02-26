@@ -31,7 +31,7 @@ namespace Octopus.Injection.Commons
                     var serviceBlock = new ServiceBlock(svcBlockConf.Name);
                     var asmDir = svcBlockConf.AssemblyLocation;
 
-                    foreach (DependenceConf dependConf in svcBlockConf.Dependences)
+                    foreach (DependenceConf dependConf in svcBlockConf.Dependencies)
                     {
                         string fileDll = string.Format("{0}/{1}", asmDir, dependConf.Assembly);
 
@@ -52,10 +52,10 @@ namespace Octopus.Injection.Commons
                         serviceBlock.Assemblies.Add(assembly);
 
                         //Cargamos el tipo que se injectará en el servicio
-                        if (svcBlockConf.InjectionMap != null &&
-                            dependConf.Assembly.ToLower().Equals(svcBlockConf.InjectionMap.Assembly.ToLower()))
+                        if (svcBlockConf.GenericParameter != null &&
+                            dependConf.Assembly.ToLower().Equals(svcBlockConf.GenericParameter.Assembly.ToLower()))
                         {
-                            serviceBlock.InjectionType = assembly.GetType(svcBlockConf.InjectionMap.Class);
+                            serviceBlock.InjectionType = assembly.GetType(svcBlockConf.GenericParameter.Class);
                             serviceBlock.IsGeneric = serviceBlock.InjectionType.IsGenericType;
                         }
 
